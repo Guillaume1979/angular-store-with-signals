@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {ShipComponent} from './ship.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ShipComponent, ShipComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <h1>Test des nouvelles API d'Angular</h1>
+    <app-ship/>
 
     <router-outlet />
   `,
